@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Class List: Create</title>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <!--use get if you require the server side to supply you with some data, may be from the data base
+    Responding with some data base info from the server side-->
+
+    <!--Use post if you want to put some resources to the server side, i.e, the client wants to put some resources 
+    to the server side-->
+    <!--The server might be a database-->
+    <form action= "api/create" method="post">
+        <div>
+            <label for="studentName">Enter The Student's Name</label>
+            <input type="text" id="student" name="student">
+        </div>
+        <div class="button">
+        <button type="submit">Add</button>
+        </div>
+    </form>
+</body>
+</html>

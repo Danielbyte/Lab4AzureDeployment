@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="api/edit" method="post">
+
+            <!--Create dropdown to select if you want to edit student id or name-->
+            <div id="edit-field">
+                <label for="edit-query">Edit:</label>
+                <select id="edit-query" name="dropdown">
+                    <option disabled hidden selected>select</option>
+                    <option value="studentId">Student ID</option>
+                    <option value="studentName">Name</option>
+                </select>
+
+                <br><br>
+                <input type = "text" id = "old" name = "old" placeholder = "Enter old name" required>
+                <input type="text" id = "New" name = "New" placeholder="Enter new name/ID" required>
+            </div>
+
+            <br>
+
+            <div class="button">
+                <button type="submit">Edit</button>
+            </div>
+
+        </form>
+
+    </body>
+</html>
